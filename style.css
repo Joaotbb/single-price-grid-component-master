@@ -1,0 +1,142 @@
+/* Structure page at the center */
+body {
+  background-color: lightgrey;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+}
+
+/* helper to center */
+.container {
+  background: orange;
+  border-radius: 6px;
+}
+
+.mygrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+h1 {
+  color: rgb(130, 226, 217);
+  font-weight: 700;
+}
+
+h2 {
+  color: rgb(190, 222, 51);
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 0;
+}
+
+.p1 {
+  padding-bottom: 18px;
+}
+
+/* Start Section 1 */
+.block1 {
+  background-color: white;
+  padding: 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.p1 {
+  color: hsl(218, 22%, 67%);
+}
+
+/* Start Section 2 */
+.block2 {
+  background-color: rgb(41, 180, 178);
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 6px;
+}
+
+.priceline {
+  display: flex;
+  align-items: center;
+}
+
+.price29 {
+  font-size: xx-large;
+}
+
+.month {
+  font-size: smaller;
+  opacity: 50%;
+  padding-left: 6px;
+}
+
+.dollar {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: small;
+}
+
+.dollar span {
+  font-weight: 400;
+  font-size: medium;
+}
+
+.btnwrapper {
+  margin-bottom: 0%;
+  padding-top: 26px;
+}
+
+.button {
+  background-color: rgb(190, 222, 51);
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(78, 209, 52);
+}
+
+/* Start Section 3 */
+
+.block3 {
+  background-color: rgb(72, 190, 188);
+  color: white;
+  padding: 20px;
+  border-bottom-right-radius: 6px;
+}
+
+.nobull {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  opacity: 60%;
+}
+
+@media only screen and (max-width: 960px) {
+  .mygrid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .block2 {
+    border-bottom-left-radius: 0%;
+  }
+
+  .block3 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
